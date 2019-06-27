@@ -1,0 +1,16 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.example.simple-notes
+mac:
+  category: public.app-category.utilities
+  icon: build/static_assets/mac/icon.png
+win:
+  target: nsis
+  icon: build/static_assets/win/icon.png
+files:
+  - node_modules/
+  - build/
+  - static_assets/
+  - '*'
+electronVersion: 2.0.8
